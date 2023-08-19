@@ -96,9 +96,6 @@
 <p>컬럼 : author</p>
 <p>타입 : varchar(100) </p>
 
-<br/><br/><br/>
-<hr/>
-
 <p>외래어 키 : postId </p>
 <p>타겟 : post(postId -> id)</p>
 <p>On Update: RESTRICT</p>
