@@ -106,5 +106,49 @@
 
 
 
+<br/><br/><br/>
+<hr/>
+
+<h1>API 설계</h1>
+
+<table>
+  <tr>
+    <td>기능</td>
+    <td>URL</td>
+    <td>동작 방법</td>
+  </tr>
+  <tr>
+    <td>로그인</td>
+    <td>/simple/login.do</td>
+    <td>로그인 후 메인 화면으로 이동.</td>
+  </tr>
+  <tr>
+    <td>로그아웃</td>
+    <td>/simple/logout.do</td>
+    <td>로그아웃 후 로그인 페이지로 이동.</td>
+  </tr>
+  <tr>
+    <td>회원가입</td>
+    <td>/simple/signup.do</td>
+    <td>회원가입후 데이터베이스에 회원정보 저장.</td>
+  </tr>
+  <tr>
+    <td>홈페이지</td>
+    <td>/simple/home?page={page}&keyword={keyword}</td>
+    <td>홈페이지에 모든 게시물 불러오기</td>
+  </tr>
+   <tr>
+    <td>홈페이지</td>
+    <td>/simple/home/{loggedInUsername}?page={page}&keyword={keyword}</td>
+    <td>홈페이지에 로그인 된 유저의 모든 게시물 불러오기</td>
+  </tr>
+  <tr>
+    <td>홈페이지</td>
+    <td>/simple/home/{loggedInUsername}?page={page}&keyword={keyword}</td>
+    <td>홈페이지에 로그인 된 유저의 모든 게시물 불러오기</td>
+  </tr>
+</table>
+
+
 
 
