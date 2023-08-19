@@ -99,6 +99,13 @@
 <br/><br/><br/>
 <hr/>
 
+<p>외래어 키 : postId </p>
+<p>타겟 : post(postId -> id)</p>
+<p>On Update: RESTRICT</p>
+<p>On Delete: CASCADE</p>
+
+<br/><br/><br/>
+<hr/>
 
 
 
