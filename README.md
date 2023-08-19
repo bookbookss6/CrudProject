@@ -48,6 +48,57 @@
 <hr/>
 
 
+<h1>테이블 명 POST</h1>
+
+<p>컬럼 : id  </p>
+<p>타입 : int , primary key , auto_increment</p>
+
+<p>컬럼 : title </p>
+<p>타입 : varchar(100) </p>
+
+<p>컬럼 : author</p>
+<p>타입 : varchar(100)</p>
+
+<p>컬럼 : content</p>
+<p>타입 : varchar(1000)</p>
+
+<p>컬럼 : image</p>
+<p>타입 : mediumblob</p>
+
+<p>컬럼 : date</p>
+<p>타입 : date</p>
+
+<p>컬럼 : user_id</p>
+<p>타입 : int</p>
+
+<p>컬럼 : visited</p>
+<p>타입 : int</p>
+
+<p>외래어 키 : user_id </p>
+<p>타겟 : user(user_id -> id)</p>
+<p>On Update: RESTRICT</p>
+<p>On Delete: CASCADE</p>
+
+<br/><br/><br/>
+<hr/>
+
+<h1>테이블 명 COMMENT</h1>
+
+<p>컬럼 : id  </p>
+<p>타입 : int , primary key , auto_increment</p>
+
+<p>컬럼 : content </p>
+<p>타입 : varchar(500) </p>
+
+<p>컬럼 : postId</p>
+<p>타입 : int </p>
+
+<p>컬럼 : author</p>
+<p>타입 : varchar(100) </p>
+
+<br/><br/><br/>
+<hr/>
+
 
 
 
