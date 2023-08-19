@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+	"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	<typeAliases>
+    <!-- alias로 자바객체 연결 -->
+		<typeAlias alias="User" type="com.spring.simple.user.vo.UserVO" />
+		<typeAlias alias="Post" type="com.spring.simple.post.vo.PostVO" />
+		<typeAlias alias="Comment" type="com.spring.simple.comment.vo.CommentVO" />
+		<typeAlias alias="Page" type="com.spring.simple.page.vo.PageVO" />
+	</typeAliases>
+
+</configuration>

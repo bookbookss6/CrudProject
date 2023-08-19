@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="user">
+	<insert id="insert_user" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+		insert into user(username,password)
+		values(#{username},#{password});
+		]]>
+	</insert>
+	<select id="select_user" parameterType="String" resultType="User">
+		<![CDATA[
+		select * from user where username = #{username}
+		]]>
+	</select>
+	<delete id="delete_user" parameterType="String">
+		<![CDATA[
+		delete from user
+		where username = #{loggedInUsername}
+		]]>
+	</delete>
+	<select id="select_user_id" parameterType="String" resultType="int">
+		<![CDATA[
+			select id from user where username = #{username}
+		]]>
+	</select>
+
+</mapper>

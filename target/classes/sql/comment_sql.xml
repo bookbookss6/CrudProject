@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="comment">
+	<insert id="insert_comment" parameterType="Comment">
+		<![CDATA[
+			insert into comment(id,content,postId,author)
+			values(#{id},#{content},#{postId},#{author});
+		]]>
+	</insert>
+	<select id="select_comments" parameterType="int" resultType="hashMap">
+		<![CDATA[
+			select * from comment
+			where postId = #{postId};
+		]]>
+	</select>
+	<delete id="delete_comment" parameterType="int">
+		<![CDATA[
+			delete from comment
+			where id = #{id};
+		]]>
+	</delete>
+	<select id="select_comment" parameterType="int" resultType="Comment">
+		<![CDATA[
+			select * from comment
+			where id = #{id};
+		]]>
+	</select>
+	
+</mapper>

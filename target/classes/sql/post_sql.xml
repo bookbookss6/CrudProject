@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="post">
+	
+	<select id="select_all_posts" parameterType="Page" resultType="hashMap">
+		<![CDATA[
+			select * from post 
+			order by id desc limit #{offset} , #{maxSize};
+		]]>
+	</select>
+	
+	<select id="select_all_posts_with_keyword" parameterType="Page" resultType="hashMap">
+		<![CDATA[
+			select * from post 
+			where title like CONCAT('%',#{keyword},'%')
+			order by id desc limit #{offset} , #{maxSize};
+		]]>
+	</select>
+	
+	<!--  수정 할것 -->
+	
+	<select id="select_all_posts_with_loggedInUsername" parameterType="hashMap" resultType="hashMap">
+		<![CDATA[
+			select * from post where author = #{loggedInUsername}
+			order by id desc limit #{offset} , #{maxSize};
+		]]>
+	</select>
+	
+	<select id="select_all_posts_with_loggedInUsername_and_keyword" parameterType="hashMap" resultType="hashMap">
+		<![CDATA[
+			select * from post 
+			where title like CONCAT('%',#{keyword},'%') and author = #{loggedInUsername}
+			order by id desc limit #{offset} , #{maxSize};
+		]]>
+	</select>
+	
+	<!--  -->
+	
+
+	<select id="select_post" parameterType="String" resultType="Post">
+		<![CDATA[
+			select * from post
+			where id = #{postId};
+		]]>
+	</select>
+	
+	<insert id="insert_post" parameterType="Post">
+		<![CDATA[
+			insert into post(title,author,content,image,user_id)
+			values(#{title},#{author},#{content},#{image},#{userId});
+		]]>
+	</insert>
+	<delete id="delete_post" parameterType="int">
+		<![CDATA[
+			delete from post
+			where id = #{id}
+		]]>
+	</delete>
+	<select id="select_author" resultType="String" parameterType="int">
+		<![CDATA[
+			select author from post
+			where id = #{id};
+		]]>
+	</select>
+	<update id="update_visited" parameterType="Post">
+		<![CDATA[
+			update post 
+			set visited = #{visited}+1
+			where id = #{id};
+		]]>
+	</update>
+	<update id="update_post" parameterType="Post">
+		<![CDATA[
+			update post
+			set title= #{title} , content = #{content} , image = #{image} 
+			where id = #{id};
+		]]>
+	</update>
+	
+</mapper>

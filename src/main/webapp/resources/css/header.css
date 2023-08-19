@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+
+.header table
+{
+	width: auto;
+	margin-right: 0px;
+    margin-left: auto;
+}
+.header table td{
+	padding-left: 10px;	
+	padding-right: 10px;
+}
+
+.user_profile img{
+	width: 30px;
+	height: 30px;
+}
+
+.user_profile :hover {
+	cursor: pointer;
+	opacity: 40%;
+}

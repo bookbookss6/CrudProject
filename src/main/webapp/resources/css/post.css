@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(101,127,135);
+}
+
+button{
+	border-color: black;
+	border-radius: 45px;	
+}
+
+button:hover, input[type="file"]:hover{
+	cursor: pointer;
+	opacity: 40%;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(204,217,237);
+	font-weight: bold;
+	font-family: sans-serif;
+}
+a:hover{
+	opacity: 40%;
+}
+.post_container table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	border-radius: 45px;
+	border-color: black;
+	border-style: dashed;
+	border-width:3px;
+	padding: 30px;
+	color:rgb(228,231,237);
+	background-color:rgb(79,83,92);
+	width: 80%;
+}
+.post_container table td:not(.content , .image ,.delete_button, .modify_button){
+	border-color: black;
+	border-style: solid;
+	border-width:1.5px;	
+}
+.content , .image{
+	border-color: black;
+	border-style: solid;
+	border-left-width:1.5px;
+	border-right-width:1.5px;
+	border-top-width:0px;
+	border-bottom-width:0px;	
+	padding-top: 50px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.delete_button , .modify_button{
+	text-align: center;
+}
+
+.comment-area-container table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	border-radius: 45px;
+	border-color: black;
+	border-style: dashed;
+	border-width:3px;
+	padding: 30px;
+	color:rgb(228,231,237);
+	background-color:rgb(79,83,92);
+	width: 80%;
+}
+.comment-area-container table td{
+	border-style: solid;
+	border-color: black;
+	border-width: 0.5px;
+	text-align: center;	
+}
+
+.comment-container table{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:100px;
+	border-color: black;
+	border-style: solid;
+	border-width:3px;
+	padding: 30px;
+	color:rgb(228,231,237);
+	background-color:rgb(79,83,92);
+	width: 80%;
+	border-collapse: separate;
+	border-spacing: 0 15px;
+}
+
+.comment-container table td{
+	border-style: solid;
+	border-color: black;
+	border-width: 0.5px;
+	height: 50px;
+}
+
+
+

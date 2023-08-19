@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(101,127,135);
+}
+a{
+	text-decoration: none;
+	color: rgb(204,217,237);
+	font-weight: bold;
+	font-family: sans-serif;
+}
+a:hover{
+	opacity: 40%;
+}
+p{
+	color: white;
+}
+
+button{
+	border-color: black;
+	border-radius: 45px;	
+}
+
+button:hover{
+	cursor: pointer;
+	opacity: 40%;
+}
+
+.profile_container{
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	display: grid;
+	background-color: rgb(62,73,89);
+	text-align: right;
+	width:30%;
+	padding:50px;
+	gap:10px;
+	border-radius: 45px;
+	border-color: black;
+	border-style: dotted;
+}
+
+.profile_item1{
+	grid-column: 1 / 2;
+	grid-row: 1 / 3;
+}
+.profile_item2{
+	grid-column: 3;
+	grid-row: 1;
+}
+.profile_item3{
+	grid-column: 3;
+	grid-row: 2 / 3;
+}
+.profile_item4{
+	grid-column: 1 / 4;
+	grid-row: 3 / 4;
+}

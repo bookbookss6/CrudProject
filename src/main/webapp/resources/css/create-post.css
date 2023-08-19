@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+	background-color: rgb(101,127,135);
+}
+
+button{
+	border-color: black;
+	border-radius: 45px;	
+}
+
+button:hover, input[type="file"]:hover{
+	cursor: pointer;
+	opacity: 40%;
+}
+
+a{
+	text-decoration: none;
+	color: rgb(204,217,237);
+	font-weight: bold;
+	font-family: sans-serif;
+}
+a:hover{
+	opacity: 40%;
+}
+
+.create-post-container{
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgb(62,73,89);
+	border-radius: 45px;
+	border-color: black;
+	border-style: dotted;
+	text-align: center;
+	width: 30%;
+	padding: 50px;
+}
+
+.create-post-container table{
+	border-collapse: separate;
+  	border-spacing: 0 1rem;	
+}
