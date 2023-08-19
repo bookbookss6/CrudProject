@@ -157,6 +157,31 @@
     <td>/simple/post/create.do?&author={author}&title=title&content={content}&image={image}</td>
     <td>해당 유저의 게시물 등록</td>
   </tr>
+  <tr>
+    <td>프로필 보기</td>
+    <td>/simple/profile</td>
+    <td>해당 유저의 프로필 보기</td>
+  </tr>
+  <tr>
+    <td>유저 삭제</td>
+    <td>/simple/profile/delete?username=${username}</td>
+    <td>해당 유저를 데이터베이스로 부터 삭제</td>
+  </tr>
+  <tr>
+    <td>에러코드 보기</td>
+    <td>/simple/error/{status-code}</td>
+    <td>해당 에러코드 보기</td>
+  </tr>
+  <tr>
+    <td>댓글 등록하기</td>
+    <td>/simple/comment.do?commentAuthor={commentAuthor}&postId={postId}&content={content}</td>
+    <td>해당 유저의 댓글 등록하기</td>
+  </tr>
+  <tr>
+    <td>댓글 삭제하기</td>
+    <td>/simple/comment/delete?id={id}</td>
+    <td>해당 유저의 댓글 삭제 하기</td>
+  </tr>
 </table>
 
 
