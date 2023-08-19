@@ -104,11 +104,6 @@
 <br/><br/><br/>
 <hr/>
 
-
-
-<br/><br/><br/>
-<hr/>
-
 <h1>API 설계</h1>
 
 <table>
@@ -143,11 +138,31 @@
     <td>홈페이지에 로그인 된 유저의 모든 게시물 불러오기</td>
   </tr>
   <tr>
-    <td>홈페이지</td>
-    <td>/simple/home/{loggedInUsername}?page={page}&keyword={keyword}</td>
-    <td>홈페이지에 로그인 된 유저의 모든 게시물 불러오기</td>
+    <td>게시물 보기</td>
+    <td>/simple/post?id={id}</td>
+    <td>해당 유저의 게시물 보기</td>
+  </tr>
+  <tr>
+    <td>게시물 삭제</td>
+    <td>/simple/post/delete?id={id}</td>
+    <td>해당 유저의 게시물 삭제</td>
+  </tr>
+  <tr>
+    <td>게시물 수정</td>
+    <td>/simple/post/update.do?id={id}&author={author}&title=title&content={content}&image={image}</td>
+    <td>해당 유저의 게시물 수정</td>
+  </tr>
+  <tr>
+    <td>게시물 만들기</td>
+    <td>/simple/post/create.do?&author={author}&title=title&content={content}&image={image}</td>
+    <td>해당 유저의 게시물 등록</td>
   </tr>
 </table>
+
+
+<br/><br/><br/>
+<hr/>
+
 
 
 
